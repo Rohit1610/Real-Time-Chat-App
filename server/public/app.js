@@ -10,9 +10,9 @@ const usersList = document.querySelector(".user-list");
 const roomsList = document.querySelector(".room-list");
 
 const chatDisplay = document.querySelector(".chat-display");
+
 function sendMessage(e) {
   e.preventDefault();
-  activity.textContent = "";
   // prevent the form default behaviour
   //  const input = document.querySelector("input");
   if (nameInput.value && chatRoom.value && msgInput.value) {
@@ -33,8 +33,8 @@ function enterRoom(e) {
     });
   }
 }
-document.querySelector("form-msg").addEventListener("submit", sendMessage);
-document.querySelector("form-join").addEventListener("submit", enterRoom);
+document.querySelector(".form-msg").addEventListener("submit", sendMessage);
+document.querySelector(".form-join").addEventListener("submit", enterRoom);
 
 msgInput.addEventListener("keypress", () => {
   socket.emit("activity", nameInput.value);

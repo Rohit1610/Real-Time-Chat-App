@@ -11,6 +11,7 @@ const roomsList = document.querySelector(".room-list");
 
 const chatDisplay = document.querySelector(".chat-display");
 
+
 function sendMessage(e) {
   e.preventDefault();
   // prevent the form default behaviour

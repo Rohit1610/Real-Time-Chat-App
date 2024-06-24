@@ -150,6 +150,7 @@ function getUsersInRoom(room) {
 
 function getAllActiveRooms() {
   // Set for not duplicates
+  
   // returns an array containing only room names
   return Array.from(new Set(UsersState.users.map((user) => user.room)));
 }

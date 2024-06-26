@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark grey text */
 }
 
 main {
@@ -35,16 +35,19 @@ input {
 
 button {
     width: 20%;
+    background-color: #4CAF50; /* Green button */
+    color: #fff; /* White text */
 }
 
 input,
 button {
     border-radius: 10px;
     padding: .5rem;
+    border: 1px solid #ccc; /* Light grey border */
 }
 
 .chat-display {
-    background-color: #333;
+    background-color: #fff; /* White background */
     list-style-type: none;
     width: 100%;
     max-width: 600px;
@@ -59,7 +62,7 @@ button {
 }
 
 .post {
-    background-color: #eee;
+    background-color: #e0e0e0; /* Light grey post background */
     border-radius: 10px;
     padding: 0 0 .25rem;
     margin: .5rem;
@@ -87,11 +90,11 @@ button {
 }
 
 .post__header--user {
-    background-color: blue;
+    background-color: #2196F3; /* Blue header for user */
 }
 
 .post__header--reply {
-    background-color: purple;
+    background-color: #673AB7; /* Purple header for reply */
 }
 
 .post__header--name {
@@ -104,7 +107,7 @@ button {
 
 .post__text {
     margin-top: 5px;
-    color: #333;
+    color: #333; /* Dark grey text */
     padding: .25rem .5rem;
 }
 
@@ -120,4 +123,5 @@ button {
 
 .activity {
     font-style: italic;
+    color: #757575; /* Grey italic text for activity */
 }
